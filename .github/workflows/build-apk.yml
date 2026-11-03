@@ -38,3 +38,5 @@ jobs:
         with:
           name: Arrows-apk
           path: android/app/build/outputs/apk/debug/app-debug.apk
+      - name: Generate app icons
+        run: npx @capacitor/assets generate --android --assetPath assets
